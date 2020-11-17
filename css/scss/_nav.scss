@@ -1,9 +1,11 @@
+/*Navbar for phones*/
 nav {
-  background: rgb(255,136,0);
-  background: linear-gradient(180deg, rgba(255,136,0,1) 0%, rgba(242,105,29,1) 25%, rgba(225,75,42,1) 50%, rgba(204,44,50,1) 75%, rgba(179,0,55,1) 100%);
+  background: rgb(255, 136, 0);
+  background: linear-gradient(180deg, rgba(255, 136, 0, 1) 0%, rgba(242, 105, 29, 1) 25%, rgba(225, 75, 42, 1) 50%, rgba(204, 44, 50, 1) 75%, rgba(179, 0, 55, 1) 100%);
   position: fixed;
   bottom: 0;
   width: 100%;
+
   ul {
     list-style: none;
     display: flex;
@@ -13,6 +15,7 @@ nav {
     padding: 0.5em;
     width: 100%;
   }
+
   li {
     color: #fff;
     display: flex;
@@ -22,12 +25,14 @@ nav {
     font-family: Yanone-regular;
     font-size: x-large;
     width: 100%;
+
     svg {
       width: 60px;
       height: 60px;
       fill: #fff;
     }
   }
+
   .desktop {
     display: none;
   }
