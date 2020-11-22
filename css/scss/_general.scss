@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+  background: url(../img/backgroundMobile.svg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
+  background-color: #FFF;
+  text-align: center;
+  margin-top: 85px;
+  img {
+    width: 50%;
+  }
+  p {
+    font-family: Yanone-regular;
+    font-size: 40px;
+  }
+}
+
+.networks {
+  position: absolute;
+  top: 0;
+  width: 90px;
+  right: -40px;
+  background-color: #FFF;
+  border-radius: 25px;
+  box-shadow: 0 0 5px 5px #E6E6E6;
+  ul {
+    list-style: none;
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+  }
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
