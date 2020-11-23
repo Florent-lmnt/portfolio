@@ -17,14 +17,24 @@ nav {
   }
 
   li {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Yanone-regular;
-    font-size: x-large;
     width: 100%;
+    a {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Yanone-regular;
+      font-size: x-large;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #212529;
+      svg {
+        fill: #212529;
+      }
+    }
 
     svg {
       width: 60px;
