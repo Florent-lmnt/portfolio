@@ -30,6 +30,138 @@ body {
   }
 }
 
+/*Main content profil*/
+.main-profil {
+  overflow: auto;
+  margin-top: 150px;
+  padding-bottom: 150px;
+}
+
+.article-profil {
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  background-color: $colorBack;
+
+  .icon-profil {
+    text-align: center;
+  }
+
+  .title {
+    font-family: Bebas;
+    font-size: 50px;
+    padding-left: 25px;
+  }
+
+  .sub-title {
+    font-family: Bebas;
+    font-size: 35px;
+    padding-left: 25px;
+  }
+
+  .skills {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    .stars {
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      svg {
+        width: 50px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .orange-stars {
+    fill: #FF8800;
+  }
+
+  p {
+    font-family: Yanone-regular;
+    font-size: 30px;
+    padding-left: 35px;
+    padding-right: 10px;
+  }
+
+  .me-preview {
+    background-image: url("../img/mobile/moi.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid #868e96;
+    margin: auto;
+  }
+
+}
+
+
+/*Main content work*/
+.main-work {
+  overflow: auto;
+  margin-top: 150px;
+  padding-bottom: 150px;
+}
+
+.submain-work {
+  margin-bottom: 50px;
+  background-color: $colorBack;
+
+  .article-work {
+    text-decoration: none;
+    padding-top: 20px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .text {
+      color: #000;
+      font-family: Yanone-regular;
+      font-size: 23px;
+    }
+
+    .svg {
+      text-align: center;
+    }
+
+    svg {
+      width: 30px;
+      height: 50px;
+    }
+  }
+
+  .image-preview {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 265px;
+    height: 140px;
+    border-radius: 100px;
+    border: 1px solid #868e96;
+    margin: 0;
+  }
+
+  .first-site {
+    background-image: url("../img/mobile/first_web.jpg");
+  }
+
+  .site-boostrap {
+    background-image: url("../img/mobile/first_bootstrap.jpg");
+  }
+
+  .site-yoga {
+    background-image: url("../img/mobile/entreprise_yoga.jpg");
+  }
+}
+
 /*Main content contact page*/
 .main-contact {
   background-color: $colorBack;
@@ -77,70 +209,6 @@ body {
     }
   }
 
-}
-
-/*Main content work*/
-.main-work {
-  overflow: auto;
-  margin-top: 150px;
-  padding-bottom: 150px;
-}
-
-.submain-work {
-  margin-bottom: 50px;
-  background-color: $colorBack;
-
-  .article {
-    text-decoration: none;
-    padding-top: 20px;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    a {
-      color: #000;
-    }
-
-    a:hover{
-      text-decoration: none;
-      color: #000;
-    }
-
-    p {
-      color: #000;
-      font-family: Yanone-regular;
-      font-size: 23px;
-    }
-
-    .svg {
-      text-align: center;
-    }
-
-    svg {
-      width: 30px;
-      height: 50px;
-    }
-  }
-
-  .image-preview {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 265px;
-    height: 140px;
-    border-radius: 100px;
-    border: 1px solid #868e96;
-    margin: 0;
-  }
-
-  .first-site {
-    background-image: url("../img/first_web.jpg");
-  }
-
-  .site-boostrap {
-    background-image: url("../img/first_bootstrap.jpg");
-  }
-
-  .site-yoga {
-    background-image: url("../img/entreprise_yoga.jpg");
-  }
 }
 
 /*Networks ticket a the top right of the screen*/

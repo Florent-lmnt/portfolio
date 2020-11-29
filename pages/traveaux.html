@@ -165,15 +165,16 @@
     </ul>
 </nav>
 <div id="header" class="header">
-    <h1  id="title">PORTFOLIO</h1>
+    <h1 id="title">PORTFOLIO</h1>
     <img id="imgHeader" src="../img/favicon.png" alt="Icon de mon portfolio">
 </div>
 <div class="container">
     <div class="main-work">
+
         <div class="submain-work">
-            <div class="article">
+            <div class="article-work">
                 <a href="http://florent.luminet.free.fr/premiersite/index.html">
-                    <p>Mon premier site</p>
+                    <div class="text">Mon premier site</div>
                     <div class="first-site image-preview"></div>
                     <div class="svg">
                         <svg>
@@ -185,9 +186,9 @@
         </div>
 
         <div class="submain-work">
-            <div class="article">
+            <div class="article-work">
                 <a href="http://florent.luminet.free.fr/bootstrap/index.html">
-                    <p>Mon premier site boostrap</p>
+                    <div class="text">Mon premier site boostrap</div>
                     <div class="site-boostrap image-preview"></div>
                     <div class="svg">
                         <svg>
@@ -199,9 +200,9 @@
         </div>
 
         <div class="submain-work">
-            <div class="article">
+            <div class="article-work">
                 <a href="http://florent.luminet.free.fr/siteyoga/index.html">
-                    <p>Site pour une entreprise de yoga</p>
+                    <div class="text">Site pour une entreprise de yoga</div>
                     <div class="site-yoga image-preview"></div>
                     <div class="svg">
                         <svg>
@@ -247,9 +248,9 @@
 </div>
 <script>
 
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {scroll()};
 
-    function scrollFunction() {
+    function scroll() {
         let header = document.getElementById("header");
         let title  = document.getElementById("title");
         let img    = document.getElementById("imgHeader");
