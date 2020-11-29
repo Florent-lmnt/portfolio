@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="../css/main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
     <title>Mon Portfolio</title>
 </head>
 <body>
@@ -163,12 +164,53 @@
         </li>
     </ul>
 </nav>
+<div id="header" class="header">
+    <h1  id="title">PORTFOLIO</h1>
+    <img id="imgHeader" src="../img/favicon.png" alt="Icon de mon portfolio">
+</div>
 <div class="container">
-    <div class="header">
-        <h1>PORTFOLIO</h1>
-    </div>
-    <div class="main">
+    <div class="main-work">
+        <div class="submain-work">
+            <div class="article">
+                <a href="http://florent.luminet.free.fr/premiersite/index.html">
+                    <p>Mon premier site</p>
+                    <div class="first-site image-preview"></div>
+                    <div class="svg">
+                        <svg>
+                            <use xlink:href="#eye"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
 
+        <div class="submain-work">
+            <div class="article">
+                <a href="http://florent.luminet.free.fr/bootstrap/index.html">
+                    <p>Mon premier site boostrap</p>
+                    <div class="site-boostrap image-preview"></div>
+                    <div class="svg">
+                        <svg>
+                            <use xlink:href="#eye"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="submain-work">
+            <div class="article">
+                <a href="http://florent.luminet.free.fr/siteyoga/index.html">
+                    <p>Site pour une entreprise de yoga</p>
+                    <div class="site-yoga image-preview"></div>
+                    <div class="svg">
+                        <svg>
+                            <use xlink:href="#eye"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 <div class="networks">
@@ -203,5 +245,24 @@
         </li>
     </ul>
 </div>
+<script>
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        let header = document.getElementById("header");
+        let title  = document.getElementById("title");
+        let img    = document.getElementById("imgHeader");
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            header.style.boxShadow = "5px 0px 5px #888888";
+            title.style.display = "none";
+            img.style.display   = "block";
+        } else {
+            header.style.boxShadow = "none";
+            title.style.display = "block";
+            img.style.display   = "none";
+        }
+    }
+</script>
 </body>
 </html>

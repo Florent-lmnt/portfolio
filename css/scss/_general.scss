@@ -1,15 +1,16 @@
 $colorBack: #FFFF;
-
 /*Background triangle texture */
-html,
 body {
-  height: 100%;
+  height: 100vh;
   background: url(../img/backgroundMobile.svg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+}
+
+.unscrollable {
   overflow: hidden;
 }
 
@@ -17,7 +18,7 @@ body {
 .main {
   background-color: $colorBack;
   text-align: center;
-  margin-top: 85px;
+  margin-top: 180px;
 
   img {
     width: 50%;
@@ -32,7 +33,7 @@ body {
 /*Main content contact page*/
 .main-contact {
   background-color: $colorBack;
-  margin-top: 85px;
+  margin-top: 150px;
 
   h2 {
     margin: 0;
@@ -60,6 +61,7 @@ body {
   .phone {
     font-family: Bebas;
     font-size: x-large;
+
     div {
       margin: auto auto auto 20px;
     }
@@ -69,11 +71,76 @@ body {
     font-family: Yanone-regular;
     font-weight: bold;
     font-size: x-large;
+
     div {
       margin: auto auto auto 20px;
     }
   }
 
+}
+
+/*Main content work*/
+.main-work {
+  overflow: auto;
+  margin-top: 150px;
+  padding-bottom: 150px;
+}
+
+.submain-work {
+  margin-bottom: 50px;
+  background-color: $colorBack;
+
+  .article {
+    text-decoration: none;
+    padding-top: 20px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    a {
+      color: #000;
+    }
+
+    a:hover{
+      text-decoration: none;
+      color: #000;
+    }
+
+    p {
+      color: #000;
+      font-family: Yanone-regular;
+      font-size: 23px;
+    }
+
+    .svg {
+      text-align: center;
+    }
+
+    svg {
+      width: 30px;
+      height: 50px;
+    }
+  }
+
+  .image-preview {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 265px;
+    height: 140px;
+    border-radius: 100px;
+    border: 1px solid #868e96;
+    margin: 0;
+  }
+
+  .first-site {
+    background-image: url("../img/first_web.jpg");
+  }
+
+  .site-boostrap {
+    background-image: url("../img/first_bootstrap.jpg");
+  }
+
+  .site-yoga {
+    background-image: url("../img/entreprise_yoga.jpg");
+  }
 }
 
 /*Networks ticket a the top right of the screen*/
@@ -84,7 +151,7 @@ body {
   right: -40px;
   background-color: $colorBack;
   border-radius: 25px;
-  box-shadow: 0 0 5px 5px #E6E6E6;
+  box-shadow: 0 0 5px 5px #888888;
 
   ul {
     list-style: none;

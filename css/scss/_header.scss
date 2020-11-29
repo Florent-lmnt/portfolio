@@ -1,5 +1,8 @@
 /*header text with gradient color*/
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
   background-color: $colorBack;
   h1 {
     font-size: 45px;
@@ -8,5 +11,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-left: 10px;
+  }
+  #imgHeader {
+    padding-left: 10px;
+    width: 50px;
+    display: none;
   }
 }
