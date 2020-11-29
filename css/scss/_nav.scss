@@ -19,7 +19,7 @@ nav {
   li {
     width: 100%;
     a {
-      color: #fff;
+      color: $colorBack;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -39,7 +39,7 @@ nav {
     svg {
       width: 60px;
       height: 60px;
-      fill: #fff;
+      fill: $colorBack;
     }
   }
 

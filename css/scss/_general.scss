@@ -1,3 +1,5 @@
+$colorBack: #FFFF;
+
 /*Background triangle texture */
 html,
 body {
@@ -13,16 +15,65 @@ body {
 
 /*Main content with logo and name first name*/
 .main {
-  background-color: #FFF;
+  background-color: $colorBack;
   text-align: center;
   margin-top: 85px;
+
   img {
     width: 50%;
   }
+
   p {
     font-family: Yanone-regular;
     font-size: 40px;
   }
+}
+
+/*Main content contact page*/
+.main-contact {
+  background-color: $colorBack;
+  margin-top: 85px;
+
+  h2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 25px;
+    font-family: Bebas;
+    font-size: 30px;
+  }
+
+  svg {
+    width: 65px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+
+    div {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .phone {
+    font-family: Bebas;
+    font-size: x-large;
+    div {
+      margin: auto auto auto 20px;
+    }
+  }
+
+  .email {
+    font-family: Yanone-regular;
+    font-weight: bold;
+    font-size: x-large;
+    div {
+      margin: auto auto auto 20px;
+    }
+  }
+
 }
 
 /*Networks ticket a the top right of the screen*/
@@ -31,14 +82,16 @@ body {
   top: 0;
   width: 90px;
   right: -40px;
-  background-color: #FFF;
+  background-color: $colorBack;
   border-radius: 25px;
   box-shadow: 0 0 5px 5px #E6E6E6;
+
   ul {
     list-style: none;
     padding: 5px 5px 5px 5px;
     margin: 0;
   }
+
   svg {
     width: 40px;
     height: 40px;
