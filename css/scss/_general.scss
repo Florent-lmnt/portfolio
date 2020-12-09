@@ -107,12 +107,12 @@ body {
 .submain-work {
   margin-bottom: 50px;
   background-color: $colorBack;
+  display: flex;
+  justify-content: center;
 
   .article-work {
     text-decoration: none;
     padding-top: 20px;
-    margin-left: 10vh;
-    margin-right: 10vh;
 
     a {
       color: #000;
