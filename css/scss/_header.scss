@@ -4,6 +4,7 @@
   width: 100%;
   top: 0;
   background-color: $colorBack;
+
   h1 {
     font-size: 45px;
     font-family: Bebas;
@@ -12,9 +13,36 @@
     -webkit-text-fill-color: transparent;
     padding-left: 10px;
   }
+
   #imgHeader {
     padding-left: 10px;
     width: 50px;
     display: none;
   }
+}
+
+/*Media for desktop*/
+@media only screen and (min-width: 900px) {
+  .header {
+    width: 93%;
+    right: 0;
+
+    h1 {
+      font-size: 70px;
+      text-align: right;
+      padding-left: 0;
+      padding-right: 10px;
+    }
+
+    #imgHeader {
+      float: right;
+      padding-left: 0;
+      padding-right: 10px;
+      width: 70px;
+      display: none;
+    }
+
+  }
+
+
 }

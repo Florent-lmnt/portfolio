@@ -18,6 +18,7 @@ nav {
 
   li {
     width: 100%;
+
     a {
       color: $colorBack;
       display: flex;
@@ -31,6 +32,7 @@ nav {
     a:hover {
       text-decoration: none;
       color: #212529;
+
       svg {
         fill: #212529;
       }
@@ -45,6 +47,14 @@ nav {
 
   .desktop {
     display: none;
+    bottom: 0;
+
+    svg {
+      padding-bottom: 5px;
+      width: 30px;
+      height: 30px;
+      fill: $colorBack;
+    }
   }
 
   .onpage {
@@ -54,4 +64,48 @@ nav {
 
 }
 
+/*Media for desktop*/
+@media only screen and (min-width: 900px) {
+  nav {
+    left: 0;
+    width: 7%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    ul {
+      flex-direction: column;
+      margin-top: 60px;
+
+      li {
+        margin-bottom: 20px;
+
+        svg {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
+
+    .desktop {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .onpage {
+      background: rgba(0, 0, 0, 0);
+      border-radius: 0;
+
+      border-top: 5px solid transparent;
+      border-right: 5px solid rgba(33, 37, 41, 0.7);
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid rgba(33, 37, 41, 0.7);
+    }
+
+  }
+
+
+}

@@ -173,7 +173,7 @@
 
         <div class="submain-work">
             <div class="article-work">
-                <a href="http://florent.luminet.free.fr/premiersite/index.html">
+                <a href="http://florent.luminet.free.fr/premiersite/index.html" target="_blank">
                     <div class="text">Mon premier site</div>
                     <div class="first-site image-preview"></div>
                     <div class="svg">
@@ -187,7 +187,7 @@
 
         <div class="submain-work">
             <div class="article-work">
-                <a href="http://florent.luminet.free.fr/bootstrap/index.html">
+                <a href="http://florent.luminet.free.fr/bootstrap/index.html" target="_blank">
                     <div class="text">Mon premier site boostrap</div>
                     <div class="site-boostrap image-preview"></div>
                     <div class="svg">
@@ -201,7 +201,7 @@
 
         <div class="submain-work">
             <div class="article-work">
-                <a href="http://florent.luminet.free.fr/siteyoga/index.html">
+                <a href="http://florent.luminet.free.fr/siteyoga/index.html" target="_blank">
                     <div class="text">Site pour une entreprise de yoga</div>
                     <div class="site-yoga image-preview"></div>
                     <div class="svg">
@@ -248,20 +248,22 @@
 </div>
 <script>
 
-    window.onscroll = function() {scroll()};
+    window.onscroll = function () {
+        scroll()
+    };
 
     function scroll() {
         let header = document.getElementById("header");
-        let title  = document.getElementById("title");
-        let img    = document.getElementById("imgHeader");
+        let title = document.getElementById("title");
+        let img = document.getElementById("imgHeader");
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
             header.style.boxShadow = "5px 0px 5px #888888";
             title.style.display = "none";
-            img.style.display   = "block";
+            img.style.display = "block";
         } else {
             header.style.boxShadow = "none";
             title.style.display = "block";
-            img.style.display   = "none";
+            img.style.display = "none";
         }
     }
 </script>

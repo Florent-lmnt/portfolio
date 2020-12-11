@@ -1,8 +1,7 @@
 $colorBack: #FFFF;
 /*Background triangle texture */
 body {
-  height: 100vh;
-  background: url(../img/backgroundMobile.svg) no-repeat fixed;
+  background: url(../img/backgroundMobile.svg) fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -61,10 +60,12 @@ body {
   .skills {
     padding-left: 30px;
     margin-bottom: 30px;
+
     .stars {
       display: flex;
       justify-content: center;
       height: 50px;
+
       svg {
         width: 50px;
         margin-right: 10px;
@@ -166,6 +167,7 @@ body {
 .main-contact {
   background-color: $colorBack;
   margin-top: 150px;
+  margin-bottom: 150px;
 
   h2 {
     margin: 0;
@@ -231,4 +233,115 @@ body {
     width: 40px;
     height: 40px;
   }
+}
+
+/*Media for desktop*/
+@media only screen and (min-width: 900px) {
+  body {
+    background: url(../img/backgroundDesktop.svg) fixed right;
+  }
+
+  .networks {
+    display: none
+  }
+
+  /*Main content with logo and name first name*/
+  .main {
+    background-color: $colorBack;
+    width: 93%;
+    float: right;
+    text-align: center;
+    margin-top: 230px;
+
+    img {
+      width: 20%;
+    }
+
+    p {
+      font-size: 70px;
+    }
+  }
+
+  /*Main content profil*/
+  .main-profil {
+    margin-top: 230px;
+    padding-bottom: 50px;
+    width: 93%;
+    float: right;
+  }
+
+  /*Main content work*/
+  .main-work {
+    margin-top: 230px;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+    width: 93%;
+    float: right;
+  }
+
+  .submain-work {
+    width: 100%;
+
+    .article-work {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      padding-bottom: 20px;
+
+      .text {
+        font-size: 39px;
+      }
+
+      svg {
+        width: 30px;
+      }
+
+      a {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      a:hover{
+        border-left: 3px solid #212529;
+        border-right: 3px solid #212529;
+        border-radius: 150px;
+      }
+
+    }
+
+  }
+
+
+  /*Main content contact page*/
+  .main-contact {
+    width: 93%;
+    float: right;
+    margin-top: 230px;
+
+    .contact {
+      width: 65%;
+      float: right;
+      margin: auto;
+      padding: 0;
+
+      h2 {
+        padding-left: 0;
+        font-size: 50px;
+      }
+    }
+
+    .phone {
+      font-size: 45px;
+    }
+
+    .email {
+      font-size: 45px;
+    }
+
+  }
+
+
 }
