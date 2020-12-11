@@ -270,6 +270,24 @@ body {
     float: right;
   }
 
+  .article-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-size: 45px;
+    }
+
+    .both-icon {
+      display: flex;
+    }
+
+    .both-skill {
+      display: flex;
+    }
+  }
+
   /*Main content work*/
   .main-work {
     margin-top: 230px;
